@@ -1,19 +1,21 @@
 ﻿
-Console.WriteLine("Chose a fruit");
+Console.WriteLine("Fruit Choices:");
 Console.WriteLine("1. Orange");
 Console.WriteLine("2. Strawberry");
 Console.WriteLine("3. Pear");
-Console.WriteLine("4. Mandarin");
+Console.WriteLine("4. Apple");
 
 PickingFruit();
-void PickingFruit()
+static void PickingFruit()
 {
     Console.WriteLine("Chose a fruit: ");
+
     double fruit = Convert.ToDouble(Console.ReadLine());
-    string PickFruit = "yes";
+    string PickFruit;
+
     if (fruit == 1)
     {
-        Console.WriteLine("You chose Orange");
+        Console.WriteLine("You chose Orange \n");
         Console.WriteLine("Want to chose another fruit?");
         PickFruit = Console.ReadLine();
         if (PickFruit == "yes")  
@@ -27,7 +29,7 @@ void PickingFruit()
     }
     else if (fruit == 2)
     {
-        Console.WriteLine("You chose Strawberry");
+        Console.WriteLine("You chose Strawberry \n");
         Console.WriteLine("Want to chose another fruit?");
         PickFruit = Console.ReadLine();
         if (PickFruit == "yes")
@@ -41,7 +43,7 @@ void PickingFruit()
     }
     else if (fruit == 3)
     {
-        Console.WriteLine("You chose Pear");
+        Console.WriteLine("You chose Pear \n");
         Console.WriteLine("Want to chose another fruit?");
         PickFruit = Console.ReadLine();
         if (PickFruit == "yes")
@@ -55,7 +57,7 @@ void PickingFruit()
     }
     else if (fruit == 4)
     {
-        Console.WriteLine("You chose Mandarin");
+        Console.WriteLine("You chose Apple \n");
         Console.WriteLine("Want to chose another fruit?");
         PickFruit = Console.ReadLine();
         if (PickFruit == "yes")
@@ -69,7 +71,7 @@ void PickingFruit()
     }
     else
     {
-        Console.WriteLine(fruit + " is not an option");
+        Console.WriteLine(fruit + " is not an option \n");
         Console.WriteLine("Want to chose another fruit?");
         PickFruit = Console.ReadLine();
         if (PickFruit == "yes")
